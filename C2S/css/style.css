@@ -87,17 +87,40 @@ section{
     height: 100vh;
 }
 
+/* O projektu CSS */
+
+#oProjektu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#oProjektu .slika img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+#oProjektu .tekst{
+    margin: 0;
+    padding: 0;
+}
+
+/* */
+
 h2.heading{
-    font-size: 4rem;
-    padding: 1rem;
+    margin: 0;
+    font-size: 7rem;
+    padding: 1.2rem;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
     color: #C21807;
 }
 
 p.paragraf{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding: 1rem;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -124,6 +147,15 @@ footer{
 }
 
 @media screen and (max-width: 864px){
+
+    h2.heading{
+        font-size: 4rem;
+    }
+
+    p.paragraf{
+        font-size: 1rem;
+    }
+
     .logo{
         padding: 0;
     }
