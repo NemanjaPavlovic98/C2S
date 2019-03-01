@@ -7,6 +7,8 @@
     <title>C2S | 2019</title>
     <!-- Nas CSS import -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Animate CSS import -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
@@ -38,10 +40,14 @@
 
     <!-- O projektu section -->
     <section id="oProjektu">
-        <h2 class="heading">O projektu</h2>
-        <p class="paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident magnam reprehenderit possimus eum dolorum incidunt ea
-            a repudiandae delectus officiis vero mollitia assumenda maiores consequuntur, blanditiis ducimus accusamus animi veniam
-            nisi. Repellendus corporis quam voluptatibus perferendis. Quis iure officia aliquam?</p>
+        <div class="tekst">
+            <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700" class="heading">O projektu</h2>
+            <p  data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800" class="paragraf">„Studenti studentima“ je tradicionalni projekat Udruženja studenata informatike FONIS čiji je glavni cilj prenošenje znanja
+                iz IT oblasti. Pravo učešća na projektu imaju svi studenti beogradskih fakulteta, bez obzira na usmerenje. Ove godine
+                će se radionice održavati tokom vikenda, 20-21. oktobra. Kao i do sada, mesto održavanja je Fakultet organizacionih nauka,
+                a učešće na svim radionicama je besplatno.</p>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="1000" class="slika"><img src="img/randomBg2.jpg"></div>
     </section>
 
     <!-- Radionice section -->
@@ -49,7 +55,7 @@
         <h2 class="heading">Radionice</h2>
         <p class="paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident magnam reprehenderit possimus eum dolorum incidunt
             ea a repudiandae delectus officiis vero mollitia assumenda maiores consequuntur, blanditiis ducimus accusamus animi
-            veniam nisi. Repellendus corporis quam voluptatibus perferendis. Quis iure officia aliquam?</p>
+            veniam nisi. Repellendus corporis quam voluptatibus perferendis. Quis iure officia aliquam?</p>    
     </section>
 
     <!-- Partneri section -->
@@ -106,6 +112,10 @@
             }
         }
 
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 </body>
 </html>
