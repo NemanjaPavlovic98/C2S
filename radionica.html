@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Awesome import-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Materialize import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Nas CSS import -->
+    <link rel="stylesheet" href="css/radionice.css">
+    <title>Radionica-Google</title>
+</head>
+<body>
+    <a href="index.html" class="button waves-effect waves-light btn-small"><i class="fas fa-arrow-circle-left"></i> Go Back</a>
+    <div class="container1">
+        <div class="grid-1">
+            <div class="logo">
+                <img src="img/logoRandom.jpg" alt="">
+            </div>
+            <div class="naslov">Google AdWords</div>
+            <div class="opis">
+                <p>Google oglašavanje je u 2017. godini predstavljalo 84% ukupnih prihoda ove kompanije, sa rastom od 25% u odnosu na godinu
+                    pre. Kako mali tako i veliki biznisi sve više uočavaju značaj Google oglašavanja gde svako želi dobiti deo kolača i postati
+                    poznat preko noći. Ovaj vid oglašavanja pokazao se veoma efikasnim za različite industrije i pomogao mnogima da kreiraju
+                    uspešan nastup na internetu. Google Ads (nekadašnji Google AdWords) doživeo je velike promene tokom poslednjih godina,
+                    a na ovom kursu naučićeš sve što je potrebno da postaviš svoju Google kampanju te saznaš koje metrike je potrebno pratiti
+                    kako bi tvoja kampanja bila uspešnija.</p>
+                <div class="faq">
+                    <ul class="collapsible popout">
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="fas fa-book"></i> Neophodno predznanje : </div>
+                            <div class="collapsible-body">
+                                <span>Nije potrebno nikakvo predznanje.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="fas fa-laptop"></i>Da li je potrebno poneti svoj laptop?</div>
+                            <div class="collapsible-body">
+                                <span>Da.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="fab fa-microsoft"></i>Potreban softver za rad na radionici :</div>
+                            <div class="collapsible-body">
+                                <span>Nije potreban.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="grid-2">
+            <div class="predavac">
+                <div class="card1">
+                    <div class="face face1">
+                        <img src="img/predavac.jpg">
+                    </div>
+                    <div class="face face2">
+                            <div class="content">
+                                <h2>Matija Radičević</h2>
+                                <p>U svet digitalnog marketinga ušao sam 2010. godine kada je bio i moj prvi dodir sa optimizacijom tadašnjeg bloga, za pretraživače.
+                                    U to vreme relativno trivijalna, a danas veoma ozbiljna oblast - SEO (search engine optimization) ostao je predmet mog
+                                    interesovanja i proučavanja više od 7 godina. Imao sam priliku da učestvujem na nekoliko realnih projekata i primenim
+                                    stečeno znanje u praksi o kojima ću pričati na samom predavanju. Najveće zadovoljsto pronalazim u finansijskim i drugim
+                                    poslovnim beneficijama koje ostvaruju oni kojima sam do sada pomogao koristeći znanje i veštine iz SEO-a. Do sada sam
+                                    držao predavanje na projektu S2S održanom 2016. godine, gde se govorilo uopštenije o digitalnom marketingu i kako on
+                                    funkcioniše, kao i na prošlogodišnjem S2S-u, kada je radionica bila vezana za SEO optimizaciju sajta.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="social">
+                <div class="fixed-action-btn">
+                    <a class="btn-floating btn-large blue darken-3">
+                        <i class="fas fa-user-circle"></i>
+                    </a>
+                    <ul>
+                        <li>
+                            <a class="btn-floating blue darken-1">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn-floating red darken-3">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn-floating blue lighten-1">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+         });
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {
+                direction: 'left'
+            });
+        });
+    </script>
+</body>
+</html>

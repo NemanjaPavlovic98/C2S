@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    margin: 0;
+    padding: 5rem;
+    width: 100%;
+    height: 100vh;
+    background: #5fa2cf;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Button */
+.button{
+    text-align: center;
+    padding: .2rem;
+    background: #457ea5;
+    height: 6vh;
+    width: 100%;
+}
+
+.button:hover{
+    background: #77bff0;
+}
+
+/* Container */
+
+.container1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Grid1 */
+
+.grid-1{
+    text-align: center;
+}
+
+.logo img{
+    display: inline-block;
+    margin-top: 3rem;
+}
+
+.naslov{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.opis p{
+    font-size: 1rem;
+    color: #fff;
+}
+
+.opis .faq{
+    margin-top: 3rem;
+}
+
+.opis .collapsible-header{
+    font-size: 1rem;
+}
+
+.opis .collapsible-body{
+    color: #fff;
+    font-size: .8rem;
+    background-color: #77bff0;
+}
+
+/* Grid2 */
+
+.predavac{
+    margin: 0 0 0 4rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card1{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 0;
+}
+
+.card1 .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 .face.face1{
+    top: 0;
+    left: 0;
+    transition-property: left, z-index, transform;
+    transition-delay: 0s, .5s, .5s;
+    transition-duration: .5s, 0s, .5s;
+    z-index: 2;
+    transform: translate(-10px, -10px);
+}
+
+.card1:hover .face.face1{
+    transition-property: transform, z-index, left;
+    transition-delay: 0s, .5s, .5s;
+    transition-duration: .5s, 0s, .5s;
+    transform: translate(170px, -10px);
+    z-index: 1;
+    left: -160px;
+}
+
+.card1 .face.face1 img{
+    max-width: 100%;
+}
+
+.card1 .face.face2 .content{
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card1 .face.face2 .content h2{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.card1 .face.face2 .content p{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    font-size: .6rem;
+}
+
+.card1 .face.face2{
+    background: #457ea5; 
+    top: 0;
+    left: 0;
+    transition-property: left, z-index, transform;
+    transition-delay: 0s, .5s, .5s;
+    transition-duration: .5s, 0s, .5s;
+    z-index: 1;
+}
+
+.card1:hover .face.face2{
+    transition-property: transform, z-index, left;
+    transition-delay: 0s, .5s, .5s;
+    transition-duration: .5s, 0s, .5s;
+    transform: translate(-160px, -10px);
+    z-index: 2;
+    left: 160px;
+}
+
+@media screen and (max-width: 864px){
+    body{
+        margin: 0;
+        padding: 2rem;
+    }
+    
+    .container1{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .naslov{
+        font-size: 2rem;
+    }
+
+    .opis p{
+        font-size: .8rem;
+    }
+
+    .opis .collapsible-header{
+        font-size: .8rem;
+    }
+    
+    .opis .collapsible-body{
+        font-size: .6rem;
+    }
+
+    .predavac{
+        margin: 0;
+    }
+}
+
+@media screen and (max-height: 650px){
+    body{
+        margin: 0;
+        padding: 0.5rem;
+    }
+
+    .container1{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .naslov{
+        font-size: 1.2rem;
+    }
+
+    .opis p{
+        font-size: .5rem;
+    }
+
+    .opis .collapsible-header{
+        font-size: .6rem;
+    }
+    
+    .opis .collapsible-body{
+        font-size: .5rem;
+    }
+
+    .predavac{
+        margin: 0;
+    }
+}
