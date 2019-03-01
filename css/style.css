@@ -307,7 +307,7 @@ footer{
     display: none;
 }
 
-@media screen and (max-height: 700px){
+@media screen and (max-height: 650px){
     #oProjektu{
         display: grid;
         grid-template-columns: 1fr;
