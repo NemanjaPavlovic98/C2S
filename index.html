@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,20 @@
     <!-- Animate CSS import -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    <!--Importovanje Jquery - Srdjan-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <!--Plugins - Srdjan-->
+    <script src="plugins/jquery.cloud9carousel.js"></script>
+    <script src="plugins/jquery.reflection.js"></script>
+    <!-- font-awesome icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body>
     <!-- Navbar stranice -->
     <div class="container">
@@ -50,12 +63,28 @@
         <div data-aos="fade-right" data-aos-duration="1000" class="slika"><img src="img/randomBg2.jpg"></div>
     </section>
 
-    <!-- Radionice section -->
+    <!-- Radionice section - Srdjan-->
     <section id="radionice">
+    
         <h2 class="heading">Radionice</h2>
-        <p class="paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident magnam reprehenderit possimus eum dolorum incidunt
-            ea a repudiandae delectus officiis vero mollitia assumenda maiores consequuntur, blanditiis ducimus accusamus animi
-            veniam nisi. Repellendus corporis quam voluptatibus perferendis. Quis iure officia aliquam?</p>    
+        <div id="wrap">
+            <div id="showcase">
+                <img src="img/logoRandom.jpg" alt="Radionica 1" class="cloud9-item">
+                <img src="img/logoRandom.jpg" alt="Radionica 2" class="cloud9-item">
+                <img src="img/logoRandom.jpg" alt="Radionica 3" class="cloud9-item">
+                <img src="img/logoRandom.jpg" alt="Radionica 4" class="cloud9-item">
+                <img src="img/logoRandom.jpg" alt="Radionica 5" class="cloud9-item">
+                <img src="img/logoRandom.jpg" alt="Radionica 6" class="cloud9-item">
+            </div>
+    
+            <p id="item-title">&nbsp;</p>
+    
+            <div class="nav noselect">
+                <button class="left"><i class="fa fa-arrow-left"></i></button>
+                <button class="right"><i class="fa fa-arrow-right"></i></button>
+            </div>
+    
+        </div>
     </section>
 
     <!-- Partneri section -->
@@ -117,5 +146,62 @@
     <script>
       AOS.init();
     </script>
-</body>
+
+    
+
+    <!--JavaScript za radionice - Srdjan-->
+    <script type="text/javascript">
+
+        $(function() {
+              var showcase = $("#showcase")
+  
+              showcase.Cloud9Carousel( {
+                    yPos: 42,
+                    yRadius: 48,
+                    mirrorOptions: {
+                          gap: 12,
+                          height: 0.2
+                    },
+                    buttonLeft: $(".nav > .left"),
+                    buttonRight: $(".nav > .right"),
+                    autoPlay: true,
+                    bringToFront: true,
+  
+                    onRendered: showcaseUpdated,
+                    onLoaded: function() {
+                          showcase.css( 'visibility', 'visible' )
+                          showcase.css( 'display', 'none')
+                          showcase.fadeIn( 1500 )
+                    }
+              })
+  
+              function showcaseUpdated( showcase ) {
+                    var title = $("#item-title").html(
+                          $(showcase.nearestItem()).attr( 'alt' )
+                    )
+  
+                    var c = Math.cos((showcase.floatIndex() % 1) * 2 * Math.PI)
+                    title.css('opacity', 0.5 + (0.5 * c))
+              }
+  
+              $('.nav > button').click( function( e ) {
+                    var b = $(e.target).addClass( 'down' )
+                    setTimeout( function() { b.removeClass( 'down' ) }, 80)
+              } )
+  
+              $(document).keydown( function( e ) {
+                    switch( e.keyCode ) {
+                          case 37:
+                          $('.nav > .left').click()
+                          break
+  
+                          case 39:
+                          $('.nav > .right').click()
+                    }
+              })
+        })
+  
+        </script>
+    
+    </body>
 </html>
