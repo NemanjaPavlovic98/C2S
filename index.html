@@ -51,7 +51,7 @@
         </nav>
     </div>
 
-    <!-- O projektu section -->
+    <!-- O projektu section Matija -->
     <section id="oProjektu">
         <div class="tekst">
             <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700" class="heading">O projektu</h2>
@@ -62,6 +62,7 @@
         </div>
         <div data-aos="fade-right" data-aos-duration="1000" class="slika"><img src="img/randomBg2.jpg"></div>
     </section>
+    <!-- Kraj section-a O projektu -->
 
     <!-- Radionice section - Srdjan-->
     <section id="radionice">
@@ -79,13 +80,14 @@
     
             <p id="item-title">&nbsp;</p>
     
-            <div class="nav noselect">
+            <div class="navv noselect">
                 <button class="left"><i class="fa fa-arrow-left"></i></button>
                 <button class="right"><i class="fa fa-arrow-right"></i></button>
             </div>
     
         </div>
     </section>
+    <!-- Kraj section-a Radionice -->
 
     <!-- Partneri section -->
     <section id="partneri">
@@ -221,8 +223,8 @@
                           gap: 12,
                           height: 0.2
                     },
-                    buttonLeft: $(".nav > .left"),
-                    buttonRight: $(".nav > .right"),
+                    buttonLeft: $(".navv > .left"),
+                    buttonRight: $(".navv > .right"),
                     autoPlay: true,
                     bringToFront: true,
   
@@ -243,7 +245,7 @@
                     title.css('opacity', 0.5 + (0.5 * c))
               }
   
-              $('.nav > button').click( function( e ) {
+              $('.navv > button').click( function( e ) {
                     var b = $(e.target).addClass( 'down' )
                     setTimeout( function() { b.removeClass( 'down' ) }, 80)
               } )
@@ -251,11 +253,11 @@
               $(document).keydown( function( e ) {
                     switch( e.keyCode ) {
                           case 37:
-                          $('.nav > .left').click()
+                          $('.navv > .left').click()
                           break
   
                           case 39:
-                          $('.nav > .right').click()
+                          $('.navv > .right').click()
                     }
               })
         })
