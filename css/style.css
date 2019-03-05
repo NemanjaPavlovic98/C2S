@@ -136,8 +136,104 @@ section:nth-child(odd){
     background-color: #CD2828;
 }
 
-/* Radionice - Srdjan*/
+/* Radionice section - pocetak (Srdjan)*/
+#radionice {
+    height: auto;
+}
+.container-radionice{
+    position: relative;
+    width: 95%;
+    margin: 10px auto 0;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 20px; 
+    
+}
 
+
+.container-radionice .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background: #C21807;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.container-radionice .card button {
+    background-color: #e7e7e7;
+    border: none;
+    color: #C21807;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.container-radionice .card button:hover {
+    background-color: #C21807;
+    color: #e7e7e7;
+    border: 2px solid #e7e7e7;
+}
+
+.container-radionice .card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 20px 20px rgba(0,0,0,.2);
+}
+.container-radionice .card .img-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.container-radionice .card:hover .img-box{
+    opacity: 0.5;
+
+}
+
+.container-radionice .card .img-box img{
+    width: 100%;
+}
+
+.container-radionice .card .content {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    bottom: -100%;
+    padding: 20px;
+    /*padding-top: 60px;*/
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+.container-radionice .card:hover .content {
+    bottom: 0;
+}
+.container-radionice .card:nth-child(1) .content {
+    background: linear-gradient(0deg, #C21807,transparent);
+}
+
+.container-radionice .card:nth-child(2) .content {
+    background: linear-gradient(0deg, #C21807, transparent);
+}
+
+.container-radionice .card:nth-child(3) .content {
+    background: linear-gradient(0deg, #C21807, transparent);
+}
+
+.container-radionice .card:nth-child(4) .content {
+    background: linear-gradient(0deg, #C21807, transparent);
+}
 
 
 /* Partneri section - pocetak */
