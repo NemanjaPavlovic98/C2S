@@ -137,26 +137,25 @@ section:nth-child(odd){
 }
 
 /* Radionice section - pocetak (Srdjan)*/
+
 #radionice {
     height: auto;
 }
 .container-radionice{
     position: relative;
-    width: 95%;
-    margin: 10px auto 0;
+    width: 70%;
+    margin: 3rem auto 0;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-template-rows: auto 1fr auto;
-    grid-gap: 20px; 
-    
+    grid-gap: 20px;   
 }
-
 
 .container-radionice .card {
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 300px;
     margin: 0 auto;
     background: #C21807;
     overflow: hidden;
@@ -165,10 +164,10 @@ section:nth-child(odd){
 }
 
 .container-radionice .card button {
-    background-color: #e7e7e7;
-    border: none;
-    color: #C21807;
-    padding: 15px 32px;
+    background-color: #C21807;
+    color: #e7e7e7;
+    border: 2px solid #e7e7e7;
+    padding: 10px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -176,9 +175,8 @@ section:nth-child(odd){
 }
 
 .container-radionice .card button:hover {
-    background-color: #C21807;
-    color: #e7e7e7;
-    border: 2px solid #e7e7e7;
+    background-color: #fff;
+    color: #C21807;
 }
 
 .container-radionice .card:hover {
@@ -208,6 +206,9 @@ section:nth-child(odd){
     width: 100%;
     height: 60%;
     bottom: -100%;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
     padding: 20px;
     /*padding-top: 60px;*/
     box-sizing: border-box;
@@ -396,37 +397,12 @@ i{
     font-family: "Roboto";
 }
 
-@media screen and (max-width: 400px){
-
-    footer ul {
-        position: relative;
-    }
-
-    footer ul li {
-        flex-basis: calc(37% - 10px);
-        padding-left: 5%;
-        justify-content: center;
-    }
-
-    footer ul li a {
-        width: 60px;
-        text-align: center;
-    }
-
-    .contact h2 {
-        font-size: 20px;
-        padding-bottom: 20px;
-    }
-}
-
 @media screen and (max-width: 864px){
 
     #oProjektu{
         display: grid;
         grid-template-columns: 1fr;
     }
-
-    
 
     #wrap {
         width: 100%;
