@@ -10,6 +10,7 @@ html{
     padding: 0;
     width: 100%;
     height: 100vh;
+    box-sizing: border-box;
 }
 
 body{
@@ -145,6 +146,12 @@ footer{
     width: 100%;
     background: #CD2828;
 }
+
+/*Tim*/
+
+ 
+/*kraj-tim*/
+
 
 @media screen and (max-width: 864px){
 
