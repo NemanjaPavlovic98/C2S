@@ -17,6 +17,7 @@ body{
     padding: 0;
     width: 100%;
     height: 100vh;
+    
 }
 
 /* Logo i main slika */
@@ -144,6 +145,7 @@ footer{
     height: 40vh;
     width: 100%;
     background: #CD2828;
+    position: relative;
 }
 
 @media screen and (max-width: 864px){
@@ -335,4 +337,43 @@ footer{
     p.paragraf{
         font-size: .7rem;
     }
+
+  
+    
+
 }
+footer ul{
+    display: flex;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+footer ul li{
+    list-style: none;
+    width:80px;
+    height:80px;
+}
+
+footer ul li a{
+    background: whitesmoke;
+    text-align: center;
+    line-height: 50px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+}
+
+i{
+    color:#333;
+}
+
+.contact h2{
+    color: whitesmoke;
+    font-family: "Roboto";
+}
+
