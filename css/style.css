@@ -396,6 +396,29 @@ i{
     font-family: "Roboto";
 }
 
+@media screen and (max-width: 400px){
+
+    footer ul {
+        position: relative;
+    }
+
+    footer ul li {
+        flex-basis: calc(37% - 10px);
+        padding-left: 5%;
+        justify-content: center;
+    }
+
+    footer ul li a {
+        width: 60px;
+        text-align: center;
+    }
+
+    .contact h2 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+}
+
 @media screen and (max-width: 864px){
 
     #oProjektu{
