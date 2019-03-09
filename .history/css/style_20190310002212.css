@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+   /* margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    */
+}
+
+body{
+    /*margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+*/
+}
+
+/* Logo i main slika */
+
+.container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background: url(../img/randomBg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    padding: 8px;
+}
+
+.logo{
+    float: left;
+    padding: 8px;
+    margin-left: 16px;
+    margin-top: 8px;
+}
+
+.logo a{
+    color: #C21807;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+
+nav ul{
+    float: right;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li:not(:first-child){
+    margin-left: 48px;
+}
+
+nav ul li:last-child{
+    margin-right: 24px;
+}
+
+nav ul li a{
+    display: inline-block;
+    outline: none;
+    color: #C21807;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+}
+
+/* Sections */
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+/* O projektu CSS */
+
+#oProjektu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#oProjektu .slika img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+#oProjektu .tekst{
+    margin: 0;
+    padding: 0;
+}
+
+/* */
+
+h2.heading{
+    margin: 0;
+    font-size: 7rem;
+    padding: 1.2rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: #C21807;
+}
+
+p.paragraf{
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #C21807;
+}
+
+#radionice h2, #radionice p, #tim h2, #tim p{
+    color: #fff;
+}
+
+section:nth-child(odd){
+    background-color: #CD2828;
+}
+
+/* Radionice section - pocetak (Srdjan)*/
+
+#radionice {
+    height: auto;
+}
+.container-radionice{
+    position: relative;
+    width: 70%;
+    margin: 3rem auto 0;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 20px;   
+}
+
+.container-radionice .card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+    background: #C21807;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.container-radionice .card button {
+    background-color: #C21807;
+    color: #e7e7e7;
+    border: 2px solid #e7e7e7;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.container-radionice .card button:hover {
+    background-color: #fff;
+    color: #C21807;
+}
+
+.container-radionice .card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 20px 20px rgba(0,0,0,.2);
+}
+.container-radionice .card .img-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.container-radionice .card:hover .img-box{
+    opacity: 0.5;
+
+}
+
+.container-radionice .card .img-box img{
+    width: 100%;
+}
+
+.container-radionice .card .content {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    bottom: -100%;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    padding: 20px;
+    /*padding-top: 60px;*/
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+.container-radionice .card:hover .content {
+    bottom: 0;
+}
+.container-radionice .card:nth-child(1) .content {
+    background: linear-gradient(0deg, #C21807,transparent);
+}
+
+.container-radionice .card:nth-child(2) .content {
+    background: linear-gradient(0deg, #C21807, transparent);
+}
+
+.container-radionice .card:nth-child(3) .content {
+    background: linear-gradient(0deg, #C21807, transparent);
+}
+
+.container-radionice .card:nth-child(4) .content {
+    background: linear-gradient(0deg, #C21807, transparent);
+}
+
+
+/* Partneri section - pocetak */
+
+#partneri{
+  height: auto;  
+}
+
+.partner-container-first{
+    padding: 40px 40px 0px 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: grey;
+
+    /*border: 1px solid yellow;  */
+}
+
+.partner-container-last{
+    padding: 0px 40px 0px 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: grey;
+
+    /*border: 1px solid yellow;  */
+}
+
+.partner-box{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 40px;
+
+   /*border: 1px solid red; */
+}
+
+.hexagon{
+    width: 280px;       /* 400px proporcije za velicinu hexagona */
+    height: 192.5px;    /* 275px                                 */
+    border-radius: 50%;
+    transform: rotate(120deg);
+    background-color: red;
+    background: transparent;
+    overflow: hidden; 
+}
+
+.hexagon-inner{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: rotate(-60deg);
+    background-color: blue; 
+    background: transparent;
+    overflow: hidden; 
+}
+
+.hexagon-inner-in{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: rotate(-60deg);
+    overflow: hidden;
+}
+
+#partner1{
+    background-color: white;                               /* boja pozadine treba da bude ista kao boja pozadine logoa */
+    background-image: url(../img/partneri/fon_logo.jpg);   /* logo partnera */
+    background-size: 60%;                                  /* da se nacentrira slika u hexagon */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#partner2{
+    background-color: #050608;
+    background-image: url(../img/partneri/adrenalin_logo.jpg);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#partner3{
+    background-color: white;
+    background-image: url(../img/partneri/fon_logo.jpg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#partner4{
+    background-color: #050608;
+    background-image: url(../img/partneri/adrenalin_logo.jpg);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#partner5{
+    background-color: #050608;
+    background-image: url(../img/partneri/adrenalin_logo.jpg);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#partner6{
+    background-color: #050608;
+    background-image: url(../img/partneri/adrenalin_logo.jpg);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Partneri section - kraj */
+
+
+
+/* Footer */
+
+footer{
+    margin: 0;
+    padding: 0;
+    height: 40vh;
+    width: 100%;
+    background: #CD2828;
+    position: relative;
+}
+
+footer ul{
+    display: flex;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+footer ul li{
+    list-style: none;
+    width:80px;
+    height:80px;
+}
+
+footer ul li a{
+    background: whitesmoke;
+    text-align: center;
+    line-height: 50px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+}
+
+i{
+    color:#333;
+}
+
+.contact h2{
+    color: whitesmoke;
+    font-family: "Roboto";
+}
+
+/*Tim*/
+
+ 
+/*kraj-tim*/
+
+
+@media screen and (max-width: 864px){
+
+    #oProjektu{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #wrap {
+        width: 100%;
+        left: 0px;
+        top: 6%;
+        margin-top: 5px;
+        margin-left: 0%;
+        position: relative;
+    }
+    
+    #showcase {
+        width: 100%;
+        height: 40vh;
+    }
+
+    #oProjektu .slika img{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 40vh;
+    }
+
+    #oProjektu .tekst{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 60vh;
+    }
+
+    h2.heading{
+        font-size: 4rem;
+    }
+
+    p.paragraf{
+        font-size: 1rem;
+    }
+
+    .logo{
+        padding: 0;
+    }
+
+    .nav-wrapper{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: #fff;
+        opacity: 0;
+        transition: all 0.2s ease;
+    }
+
+    .nav-wrapper ul{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+    }
+
+    .nav-wrapper ul li{
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+
+    .nav-wrapper ul li:nth-child(1) a{
+        transition-delay: 0.1s;
+    }
+    .nav-wrapper ul li:nth-child(2) a{
+        transition-delay: 0.2s;
+    }
+    .nav-wrapper ul li:nth-child(3) a{
+        transition-delay: 0.3s;
+    }
+    .nav-wrapper ul li:nth-child(4) a{
+        transition-delay: 0.4s;
+    }
+    .nav-wrapper ul li:nth-child(5) a{
+        transition-delay: 0.5s;
+    }
+    .nav-wrapper ul li:nth-child(6) a{
+        transition-delay: 0.6s;
+    }
+
+    .nav-wrapper ul li:not(:first-child){
+        margin-left: 0;
+    }
+
+    .nav-wrapper ul li a{
+        padding: 10px 24px;
+        opacity: 0;
+        color: #C21807;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        transform: translateX(-20px);
+        transition: all 0.2s ease;
+    }
+
+    .nav-btn{
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        display: block;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        z-index: 9999;
+        border-radius: 50%;
+    }
+
+    .nav-btn i {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #C21807;
+        border-radius: 2px;
+        margin-left: 14px;
+    }
+
+    .nav-btn i:nth-child(1){
+        margin-top: 16px;
+    }
+    .nav-btn i:nth-child(2){
+        margin-top: 4px;
+        opacity: 1;
+    }
+    .nav-btn i:nth-child(3){
+        margin-top: 4px;
+    }
+}
+
+#nav:checked + .nav-btn{
+    transform: rotate(45deg);
+}
+
+#nav:checked + .nav-btn i{
+    background: #C21807;
+    transition: transform 0.2s ease;
+}
+
+#nav:checked + .nav-btn i:nth-child(1){
+    transform: translateY(6px) rotate(180deg);
+}
+#nav:checked + .nav-btn i:nth-child(2){
+    opacity: 0;
+}
+#nav:checked + .nav-btn i:nth-child(3){
+    transform: translateY(-6px) rotate(90deg);
+}
+
+#nav:checked ~ .nav-wrapper{
+    z-index: 9990;
+    opacity: 1;
+}
+
+#nav:checked ~ .nav-wrapper ul li a{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hidden{
+    display: none;
+}
+
+/*pocetak Aleksandra*/
+@media screen and (max-width: 400px){
+
+    footer ul {
+        position: absolute;
+    }
+
+    footer ul li {
+        flex-basis: calc(37% - 10px);
+        padding-left: 5%;
+        justify-content: center;
+    }
+
+    footer ul li a {
+        width: 60px;
+        text-align: center;
+    }
+
+    .contact h2 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+}
+/*kraj Aleksandra*/
+
+@media screen and (max-height: 650px){
+    #oProjektu{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #oProjektu .slika img{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 40vh;
+    }
+
+    #oProjektu .tekst{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 60vh;
+    }
+
+    h2.heading{
+        font-size: 3rem;
+    }
+
+    p.paragraf{
+        font-size: .7rem;
+    }
+}
+
+
