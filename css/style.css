@@ -571,6 +571,23 @@ i{
 .hidden{
     display: none;
 }
+@media screen and (max-width: 400px){
+
+    footer ul {
+        position: relative;
+        
+    }
+
+    footer ul li {
+        flex-basis: calc(37% - 1000px);
+        padding-left: 5%;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+   
+}
+    }
 
 @media screen and (max-height: 650px){
     #oProjektu{
