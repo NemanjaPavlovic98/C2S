@@ -587,11 +587,7 @@ i{
 @media screen and (max-width: 400px){
 
     footer ul {
-<<<<<<< HEAD
-        position: relative;
-=======
         position: absolute;
->>>>>>> e3a079fc180f4c226120ce88da1dfb2029cfc3e3
     }
 
     footer ul li {
@@ -601,11 +597,7 @@ i{
     }
 
     footer ul li a {
-<<<<<<< HEAD
-        width: 60px;
-=======
         width: 50px;
->>>>>>> e3a079fc180f4c226120ce88da1dfb2029cfc3e3
         text-align: center;
     }
 
