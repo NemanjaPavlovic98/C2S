@@ -564,7 +564,6 @@ i{
     display: none;
 }
 
-<<<<<<< HEAD
 /*pocetak Aleksandraaa*/
 @media screen and (max-width: 400px){
 
@@ -590,8 +589,6 @@ i{
 }
 /*kraj Aleksandra*/
 
-=======
->>>>>>> 347a8a3f6e1d3481c2dab9250fa61c37e225666b
 @media screen and (max-height: 650px){
     #oProjektu{
         display: grid;
