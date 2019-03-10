@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 *{
     box-sizing: border-box;
@@ -10,6 +10,11 @@ html{
     padding: 0;
     width: 100%;
     height: 100vh;
+}
+
+html h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 body{
@@ -26,11 +31,28 @@ body{
     padding: 0;
     width: 100%;
     height: 100vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    background: url(../img/zaMatiju-01.jpg);
+    background: url(../img/randomBg-01.jpg);
     background-position: center;
     background-size: cover;
+    position: relative;
+}
+
+.keepitconnected{
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.keepitconnected span{
+    color: #CD2828;
 }
 
 nav{
@@ -64,6 +86,12 @@ nav ul li a{
     font-weight: 600;
 }
 
+nav ul li a:hover{
+    color: #CD2828;
+    font-size: 15px;
+    transition: .5s;
+}
+
 /* Sections */
 
 section{
@@ -74,6 +102,7 @@ section{
 /* O projektu CSS */
 
 #oProjektu{
+    font-family: 'Roboto', sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -87,18 +116,15 @@ section{
 }
 
 #oProjektu .tekst{
-    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    margin: 4rem 0 0 0;
     padding: 0;
 }
 
-/* */
-
 h2.heading{
-    margin: 0;
     font-size: 7rem;
     padding: 1.2rem;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     font-weight: bolder;
     color: #C21807;
 }
@@ -107,7 +133,6 @@ p.paragraf{
     font-size: 1.5rem;
     padding: 1rem;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #C21807;
 }
@@ -381,6 +406,32 @@ i{
     font-family: "Roboto";
 }
 
+@media screen and (max-width: 1200px){
+    .keepitconnected{
+        top: 40%;
+        font-size: 2rem;
+    }
+    h2.heading{
+        font-size: 6rem;
+        padding: 1rem;
+    }
+    p.paragraf{
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 960px){
+    h2.heading{
+        font-size: 5rem;
+        padding: 1rem;
+    }
+    p.paragraf{
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+}
+
 @media screen and (max-width: 864px){
 
     #oProjektu{
@@ -403,10 +454,10 @@ i{
     }
 
     #oProjektu .slika img{
-        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        width: 100%;
+        margin-left: 30%;
+        width: 40%;
         height: 40vh;
     }
 
@@ -418,15 +469,11 @@ i{
     }
 
     h2.heading{
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     p.paragraf{
-        font-size: 1rem;
-    }
-
-    .logo{
-        padding: 0;
+        font-size: 1.2rem;
     }
 
     .nav-wrapper{
@@ -490,6 +537,11 @@ i{
         transition: all 0.2s ease;
     }
 
+    nav ul li a:hover{
+        color: #C21807;
+        font-size: 14px;
+    }
+
     .nav-btn{
         position: fixed;
         right: 10px;
@@ -520,6 +572,15 @@ i{
     }
     .nav-btn i:nth-child(3){
         margin-top: 4px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .keepitconnected{
+        display: none;
+    }
+    #oProjektu .slika img{
+        display: none;
     }
 }
 
@@ -556,32 +617,3 @@ i{
     display: none;
 }
 
-@media screen and (max-height: 650px){
-    #oProjektu{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    #oProjektu .slika img{
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 40vh;
-    }
-
-    #oProjektu .tekst{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 60vh;
-    }
-
-    h2.heading{
-        font-size: 3rem;
-    }
-
-    p.paragraf{
-        font-size: .7rem;
-    }
-}
