@@ -148,6 +148,8 @@ section:nth-child(odd){
 /* Radionice section - pocetak (Srdjan)*/
 
 #radionice{
+    background: url('/img/bgCardProba.jpeg') center no-repeat;
+    background-size: cover;
     height: auto;
 }
 
@@ -167,7 +169,7 @@ section:nth-child(odd){
     width: 200px;
     height: 300px;
     margin: 0 auto;
-    background: rgb(173, 20, 6);
+    background: #C21807;
     overflow: hidden;
     border-radius: 10px;
     transition: 0.5s;
@@ -217,7 +219,7 @@ section:nth-child(odd){
     height: 60%;
     bottom: -100%;
     font-size: 12px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto',sans-serif;
     font-weight: 100;
     padding: 20px;
     /*padding-top: 60px;*/
@@ -231,19 +233,19 @@ section:nth-child(odd){
     bottom: 0;
 }
 .container-radionice .card:nth-child(1) .content {
-    background: linear-gradient(0deg, #C21807,transparent);
+    background: linear-gradient(0deg, rgb(255, 61, 43),transparent);
 }
 
 .container-radionice .card:nth-child(2) .content {
-    background: linear-gradient(0deg, #C21807, transparent);
+    background: linear-gradient(0deg, rgb(255, 61, 43), transparent);
 }
 
 .container-radionice .card:nth-child(3) .content {
-    background: linear-gradient(0deg, #C21807, transparent);
+    background: linear-gradient(0deg, rgb(255, 61, 43), transparent);
 }
 
 .container-radionice .card:nth-child(4) .content {
-    background: linear-gradient(0deg, #C21807, transparent);
+    background: linear-gradient(0deg, rgb(255, 61, 43), transparent);
 }
 
 
