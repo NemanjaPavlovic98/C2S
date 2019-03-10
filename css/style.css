@@ -583,7 +583,7 @@ i{
     display: none;
 }
 
-/*pocetak Aleksandra*/
+/*pocetak Aleksandraaa*/
 @media screen and (max-width: 400px){
 
     footer ul {
@@ -592,7 +592,6 @@ i{
 
     footer ul li {
         flex-basis: calc(37% - 10px);
-        padding-left: 5%;
         justify-content: center;
     }
 
