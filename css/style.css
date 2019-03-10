@@ -370,8 +370,8 @@ footer{
 footer ul{
     display: flex;
     position: absolute;
-    top:50%;
-    left:50%;
+    bottom:0%;
+    right:0%;
     transform: translate(-50%,-50%);
 }
 footer ul li{
@@ -392,6 +392,14 @@ footer ul li a{
     overflow: hidden;
     border: 3px solid #fff;
 }
+
+
+footer p .map {
+    margin-left: 10%;
+    
+}
+
+
 
 i{
     color:#333;
@@ -599,6 +607,7 @@ i{
         width: 50px;
         text-align: center;
     }
+
 
     .contact h2 {
         font-size: 20px;
