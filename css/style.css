@@ -603,6 +603,11 @@ i{
     .nav-btn i:nth-child(3){
         margin-top: 4px;
     }
+
+    .container-radionice{
+        grid-gap: 40px;
+        padding: 0 0 3rem 0;
+    }
 }
 
 @media screen and (max-width: 400px){
@@ -617,6 +622,10 @@ i{
     }
     #oProjektu .slika img{
         display: none;
+    }
+    .container-radionice{
+        padding: 0 0 4rem 0;
+        grid-gap: 50px;
     }
 }
 
