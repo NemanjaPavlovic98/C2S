@@ -378,7 +378,6 @@ section:nth-child(odd){
 
 #kontakt p.mapa{
     text-align: center;
-    border: 
 }
 
 footer{
@@ -610,6 +609,23 @@ footer{
     .container-radionice{
         grid-gap: 40px;
         padding: 0 0 3rem 0;
+    }
+    
+    #kontakt h2{
+        color: #fff;
+        padding: 3rem 0 2rem 0;
+        margin: 0 0 0 0;
+    }
+    
+    .btn-middle{
+        width: 50px;
+        height: 50px;
+        margin: 7px;
+    }
+    
+    .btn-middle i{
+        line-height: 50px;
+        font-size: 16px;
     }
 }
 
