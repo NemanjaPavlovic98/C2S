@@ -148,7 +148,7 @@ section:nth-child(odd){
 /* Radionice section - pocetak (Srdjan)*/
 
 #radionice{
-    background: url('/img/bgCardProba.jpeg') center no-repeat;
+    background: url('/img/probaRedPoligoni.jpeg') center no-repeat;
     background-size: cover;
     height: auto;
 }
@@ -364,7 +364,7 @@ section:nth-child(odd){
 /* Footer */
 
 #kontakt{
-    background: url('../img/bgCardProba.jpeg') center no-repeat;
+    background: url('../img/probaRedPoligoni.jpeg') center no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -383,7 +383,7 @@ section:nth-child(odd){
 footer{
     width: 100%;
     height: 40vh;
-    background: url('../img/bgCardProba.jpeg') center no-repeat;
+    background: url('../img/probaRedPoligoni.jpeg') center no-repeat;
     background-size: cover;
     margin: 0;
     padding: 0;
