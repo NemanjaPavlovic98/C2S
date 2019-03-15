@@ -5,6 +5,8 @@
     scroll-behavior: smooth;
 }
 
+/*Basic regulations*/
+
 html{
     margin: 0;
     padding: 0;
@@ -24,7 +26,7 @@ body{
     height: 100vh;
 }
 
-/* Logo i main slika */
+/* Logo i main slika - pocetak */
 
 .container{
     margin: 0;
@@ -92,6 +94,8 @@ nav ul li a:hover{
     transition: .5s;
 }
 
+/* Logo i main slika - kraj */
+
 /* Sections */
 
 section{
@@ -99,7 +103,7 @@ section{
     height: 100vh;
 }
 
-/* O projektu CSS */
+/* O projektu CSS - pocetak */
 
 #oProjektu{
     font-family: 'Roboto', sans-serif;
@@ -141,16 +145,18 @@ p.paragraf{
     color: #fff;
 }
 
-section:nth-child(odd){
-    background-color: #CD2828;
-}
+/* O projektu CSS - kraj */
 
-/* Radionice section - pocetak (Srdjan)*/
+/* Radionice section */
 
 #radionice{
     background: url('/img/probaRedPoligoni.jpeg') center no-repeat;
     background-size: cover;
     height: auto;
+}
+
+#radionice h2.heading{
+    padding-top: 4rem;
 }
 
 .container-radionice{
@@ -206,7 +212,6 @@ section:nth-child(odd){
 
 .container-radionice .card:hover .img-box{
     opacity: 0.5;
-
 }
 
 .container-radionice .card .img-box img{
@@ -228,7 +233,6 @@ section:nth-child(odd){
     transition: 0.5s;
 }
 
-
 .container-radionice .card:hover .content {
     bottom: 0;
 }
@@ -248,149 +252,69 @@ section:nth-child(odd){
     background: linear-gradient(0deg, rgb(255, 61, 43), transparent);
 }
 
+/* Radionice section - kraj */
 
 /* Partneri section - pocetak */
 
 #partneri{
-  height: auto;  
+  height: 100vh;  
 }
 
-.partner-container-first{
-    padding: 40px 40px 0px 40px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: grey;
-
-    /*border: 1px solid yellow;  */
-}
-
-.partner-container-last{
-    padding: 0px 40px 0px 40px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: grey;
-
-    /*border: 1px solid yellow;  */
-}
-
-.partner-box{
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-bottom: 40px;
-
-   /*border: 1px solid red; */
-}
-
-.hexagon{
-    width: 280px;       /* 400px proporcije za velicinu hexagona */
-    height: 192.5px;    /* 275px                                 */
-    border-radius: 50%;
-    transform: rotate(120deg);
-    background-color: red;
-    background: transparent;
-    overflow: hidden; 
-}
-
-.hexagon-inner{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    transform: rotate(-60deg);
-    background-color: blue; 
-    background: transparent;
-    overflow: hidden; 
-}
-
-.hexagon-inner-in{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    transform: rotate(-60deg);
-    overflow: hidden;
-}
-
-#partner1{
-    background-color: white;                               /* boja pozadine treba da bude ista kao boja pozadine logoa */
-    background-image: url(../img/partneri/fon_logo.jpg);   /* logo partnera */
-    background-size: 60%;                                  /* da se nacentrira slika u hexagon */
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#partner2{
-    background-color: #050608;
-    background-image: url(../img/partneri/adrenalin_logo.jpg);
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#partner3{
-    background-color: white;
-    background-image: url(../img/partneri/fon_logo.jpg);
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#partner4{
-    background-color: #050608;
-    background-image: url(../img/partneri/adrenalin_logo.jpg);
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#partner5{
-    background-color: #050608;
-    background-image: url(../img/partneri/adrenalin_logo.jpg);
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#partner6{
-    background-color: #050608;
-    background-image: url(../img/partneri/adrenalin_logo.jpg);
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
+#partneri h2.heading{
+    padding-top: 0rem;
 }
 
 /* Partneri section - kraj */
 
-/* Footer */
+/* Tim section - pocetak */
 
-#kontakt{
+#tim{
+    height: 100vh;
     background: url('../img/probaRedPoligoni.jpeg') center no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 100vh;
 }
 
-#kontakt h2{
-    color: #fff;
-    padding: 3rem 0 2rem 0;
-    margin: 0 0 0 0;
+#tim h2.heading{
+    padding-top: 4rem;
 }
 
-#kontakt p.mapa{
-    text-align: center;
-}
+/* Tim section - kraj */
+
+/* Footer */
 
 footer{
     width: 100%;
-    height: 40vh;
-    background: url('../img/probaRedPoligoni.jpeg') center no-repeat;
-    background-size: cover;
+    height: 50vh;
     margin: 0;
     padding: 0;
+    background: url('../img/probaRedPoligoni.jpeg') center no-repeat;
+    background-size: cover;
+}
+
+.adresa h3{
+    margin: 0;
+    padding-top: 3rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.adresa p.prvi{
+    margin: 0;
+    padding-top: 2rem;
+}
+
+.adresa p{
+    color: #fff;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
 .middle{
-    padding-top: 5rem;
     text-align: center;
     width: 100%;
 }
@@ -400,7 +324,7 @@ footer{
     width: 90px;
     height: 90px;
     background: #f1f1f1;
-    margin: 10px;
+    margin: 0 10px 10px;
     border-radius: 30%;
     box-shadow: 0 5px 15px -5px #00000070;
     color: #C21807;
@@ -417,6 +341,30 @@ footer{
 .btn-middle:hover i{
     transform: scale(1.3);
     color: #CD2828;
+}
+
+.made-by-fonis p{
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: .8rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.made-by-fonis p span a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: .8rem;
+    color: rgb(241, 164, 20);
+    text-transform: uppercase;
+    transition: .9s;
+}
+
+.made-by-fonis p span a:hover{
+    font-size: .9rem;
+    color:  rgb(255, 193, 77);
 }
 
 @media screen and (max-width: 1200px){
@@ -646,6 +594,15 @@ footer{
         padding: 0 0 4rem 0;
         grid-gap: 50px;
     }
+    .adresa h3{
+        font-size: 1.3rem;
+    } 
+    .adresa p{
+        font-size: .8rem;
+    }
+    .made-by-fonis{
+        font-size: .8rem;
+    }
 }
 
 #nav:checked + .nav-btn{
@@ -680,4 +637,3 @@ footer{
 .hidden{
     display: none;
 }
-
