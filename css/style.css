@@ -264,6 +264,109 @@ p.paragraf{
     padding-top: 0rem;
 }
 
+.partneri_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.partner_card{
+    position: relative;
+    width: 300px;        /* velicina kartica */
+    height: 150px;
+    overflow: hidden;
+    margin: 40px;
+}
+
+#partneri input, .partner_toggle{
+    position: absolute;
+    width: 30px;        /* velicina dugmeta */
+    height: 30px;
+    top: 10px;          /* pozicija dugmeta */
+    right: 10px;
+    outline: none;
+    z-index: 10;
+}
+
+#partneri input{
+    opacity: 0;
+}
+
+.partner_toggle{
+    pointer-events: none;
+    transition: 0.5s;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0px #C21807;    /* ovde i dole boja ovoga preko sto se pojavljuje */
+
+    background: #C21807;    /* boja dugmeta */
+    color: white;           /* boja plusa u dugmetu */
+
+    text-align: center;
+    line-height: 30px;      /* velicina, pozicija plusa u dugmetu */
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input:checked ~ .partner_toggle{
+    box-shadow: 0 0 0 500px #C21807;  /* boja ovoga sto se pojavljuje */
+    transform: rotate(225deg);
+
+    background: white;   /* boja dugmeta kad je kliknuto */
+    color: #C21807;      /* boja plusa u dugmetu kad je kliknuto */
+}
+
+.partner_imgBox, .partner_details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.partner_details{
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 11;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+input:checked ~ .partner_details{
+    opacity: 1;
+    transition-delay: 0.5s;
+
+}
+
+.partner_details h3{     /* tekst u delu koji se pojavljuje, ovde je h3, ne mora biti */
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+#partner_card1{        
+    background: white;   /* boja pozadine oko slike prvog partnera, staviti istu kao pozadina logoa partnera */
+}
+#partner_imgBox1{
+    background: url(../img/partneri/fon_logo.jpg);  /* slika prvog partnera, treba je namestiti lepo */
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+#partner_card2{
+    background: #050608;   /* boja pozadine oko slike drugog partnera, staviti istu kao pozadina logoa partnera */
+}
+#partner_imgBox2{
+    background: url(../img/partneri/adrenalin_logo.jpg); /* slika drugog partnera, treba je namestiti lepo */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+
 /* Partneri section - kraj */
 
 /* Tim section - pocetak */
