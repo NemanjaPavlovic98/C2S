@@ -5,6 +5,8 @@
     scroll-behavior: smooth;
 }
 
+/*Basic regulations*/
+
 html{
     margin: 0;
     padding: 0;
@@ -24,7 +26,7 @@ body{
     height: 100vh;
 }
 
-/* Logo i main slika */
+/* Logo i main slika - pocetak */
 
 .container{
     margin: 0;
@@ -92,6 +94,8 @@ nav ul li a:hover{
     transition: .5s;
 }
 
+/* Logo i main slika - kraj */
+
 /* Sections */
 
 section{
@@ -99,7 +103,7 @@ section{
     height: 100vh;
 }
 
-/* O projektu CSS */
+/* O projektu CSS - pocetak */
 
 #oProjektu{
     font-family: 'Roboto', sans-serif;
@@ -141,16 +145,18 @@ p.paragraf{
     color: #fff;
 }
 
-section:nth-child(odd){
-    background-color: #CD2828;
-}
+/* O projektu CSS - kraj */
 
-/* Radionice section - pocetak (Srdjan)*/
+/* Radionice section */
 
 #radionice{
-    background: url('/img/bgCardProba.jpeg') center no-repeat;
+    background: url('/img/probaRedPoligoni.jpeg') center no-repeat;
     background-size: cover;
     height: auto;
+}
+
+#radionice h2.heading{
+    padding-top: 4rem;
 }
 
 .container-radionice{
@@ -206,7 +212,6 @@ section:nth-child(odd){
 
 .container-radionice .card:hover .img-box{
     opacity: 0.5;
-
 }
 
 .container-radionice .card .img-box img{
@@ -228,7 +233,6 @@ section:nth-child(odd){
     transition: 0.5s;
 }
 
-
 .container-radionice .card:hover .content {
     bottom: 0;
 }
@@ -248,177 +252,222 @@ section:nth-child(odd){
     background: linear-gradient(0deg, rgb(255, 61, 43), transparent);
 }
 
+/* Radionice section - kraj */
 
 /* Partneri section - pocetak */
 
 #partneri{
-  height: auto;  
+  height: 100vh;  
 }
 
-.partner-container-first{
-    padding: 40px 40px 0px 40px;
+#partneri h2.heading{
+    padding-top: 0rem;
+}
+
+.partneri_container{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    background-color: grey;
-
-    /*border: 1px solid yellow;  */
 }
 
-.partner-container-last{
-    padding: 0px 40px 0px 40px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: grey;
-
-    /*border: 1px solid yellow;  */
-}
-
-.partner-box{
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-bottom: 40px;
-
-   /*border: 1px solid red; */
-}
-
-.hexagon{
-    width: 280px;       /* 400px proporcije za velicinu hexagona */
-    height: 192.5px;    /* 275px                                 */
-    border-radius: 50%;
-    transform: rotate(120deg);
-    background-color: red;
-    background: transparent;
-    overflow: hidden; 
-}
-
-.hexagon-inner{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    transform: rotate(-60deg);
-    background-color: blue; 
-    background: transparent;
-    overflow: hidden; 
-}
-
-.hexagon-inner-in{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    transform: rotate(-60deg);
+.partner_card{
+    position: relative;
+    width: 300px;        /* velicina kartica */
+    height: 150px;
     overflow: hidden;
+    margin: 40px;
 }
 
-#partner1{
-    background-color: white;                               /* boja pozadine treba da bude ista kao boja pozadine logoa */
-    background-image: url(../img/partneri/fon_logo.jpg);   /* logo partnera */
-    background-size: 60%;                                  /* da se nacentrira slika u hexagon */
-    background-position: center;
-    background-repeat: no-repeat;
+#partneri input, .partner_toggle{
+    position: absolute;
+    width: 30px;        /* velicina dugmeta */
+    height: 30px;
+    top: 10px;          /* pozicija dugmeta */
+    right: 10px;
+    outline: none;
+    z-index: 10;
 }
 
-#partner2{
-    background-color: #050608;
-    background-image: url(../img/partneri/adrenalin_logo.jpg);
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
+#partneri input{
+    opacity: 0;
 }
 
-#partner3{
-    background-color: white;
-    background-image: url(../img/partneri/fon_logo.jpg);
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
+.partner_toggle{
+    pointer-events: none;
+    transition: 0.5s;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0px #C21807;    /* ovde i dole boja ovoga preko sto se pojavljuje */
+
+    background: #C21807;    /* boja dugmeta */
+    color: white;           /* boja plusa u dugmetu */
+
+    text-align: center;
+    line-height: 30px;      /* velicina, pozicija plusa u dugmetu */
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
 }
 
-#partner4{
-    background-color: #050608;
-    background-image: url(../img/partneri/adrenalin_logo.jpg);
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
+input:checked ~ .partner_toggle{
+    box-shadow: 0 0 0 500px #C21807;  /* boja ovoga sto se pojavljuje */
+    transform: rotate(225deg);
+
+    background: white;   /* boja dugmeta kad je kliknuto */
+    color: #C21807;      /* boja plusa u dugmetu kad je kliknuto */
 }
 
-#partner5{
-    background-color: #050608;
-    background-image: url(../img/partneri/adrenalin_logo.jpg);
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
+.partner_imgBox, .partner_details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-#partner6{
-    background-color: #050608;
-    background-image: url(../img/partneri/adrenalin_logo.jpg);
-    background-size: 70%;
+.partner_details{
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 11;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+input:checked ~ .partner_details{
+    opacity: 1;
+    transition-delay: 0.5s;
+
+}
+
+.partner_details h3{     /* tekst u delu koji se pojavljuje, ovde je h3, ne mora biti */
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+#partner_card1{        
+    background: white;   /* boja pozadine oko slike prvog partnera, staviti istu kao pozadina logoa partnera */
+}
+#partner_imgBox1{
+    background: url(../img/partneri/fon_logo.jpg);  /* slika prvog partnera, treba je namestiti lepo */
     background-position: center;
     background-repeat: no-repeat;
+    
 }
+
+#partner_card2{
+    background: #050608;   /* boja pozadine oko slike drugog partnera, staviti istu kao pozadina logoa partnera */
+}
+#partner_imgBox2{
+    background: url(../img/partneri/adrenalin_logo.jpg); /* slika drugog partnera, treba je namestiti lepo */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
 
 /* Partneri section - kraj */
 
-/*Tim-Imran*/
+/* Tim section - pocetak */
 
-/*Tim-Imran-kraj*/
+#tim{
+    height: 100vh;
+    background: url('../img/probaRedPoligoni.jpeg') center no-repeat;
+    background-size: cover;
+}
 
+#tim h2.heading{
+    padding-top: 4rem;
+}
 
+/* Tim section - kraj */
 
 /* Footer */
 
 footer{
+    width: 100%;
+    height: 50vh;
     margin: 0;
     padding: 0;
-    height: 40vh;
-    width: 100%;
-    background: #CD2828;
-    position: relative;
+    background: url('../img/probaRedPoligoni.jpeg') center no-repeat;
+    background-size: cover;
 }
 
-footer ul{
-    display: flex;
-    position: absolute;
-    bottom:0%;
-    right:0%;
-    transform: translate(-50%,-50%);
-}
-footer ul li{
-    list-style: none;
-    width:80px;
-    height:80px;
-}
-
-footer ul li a{
-    background: whitesmoke;
+.adresa h3{
+    margin: 0;
+    padding-top: 3rem;
     text-align: center;
-    line-height: 50px;
-    font-size: 35px;
-    margin: 0 10px;
-    display: block;
-    border-radius: 50%;
-    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.adresa p.prvi{
+    margin: 0;
+    padding-top: 2rem;
+}
+
+.adresa p{
+    color: #fff;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.middle{
+    text-align: center;
+    width: 100%;
+}
+
+.btn-middle{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 0 10px 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #C21807;
     overflow: hidden;
-    border: 3px solid #fff;
+    position: relative;
 }
 
-
-footer p .map {
-    margin-left: 10%;
-    
+.btn-middle i{
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.2 linear;
 }
 
-
-
-i{
-    color:#333;
+.btn-middle:hover i{
+    transform: scale(1.3);
+    color: #CD2828;
 }
 
-.contact h2{
-    color: whitesmoke;
-    font-family: "Roboto";
+.made-by-fonis p{
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: .8rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.made-by-fonis p span a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: .8rem;
+    color: rgb(241, 164, 20);
+    text-transform: uppercase;
+    transition: .9s;
+}
+
+.made-by-fonis p span a:hover{
+    font-size: .9rem;
+    color:  rgb(255, 193, 77);
 }
 
 @media screen and (max-width: 1200px){
@@ -612,6 +661,23 @@ i{
         grid-gap: 40px;
         padding: 0 0 3rem 0;
     }
+    
+    #kontakt h2{
+        color: #fff;
+        padding: 3rem 0 2rem 0;
+        margin: 0 0 0 0;
+    }
+    
+    .btn-middle{
+        width: 50px;
+        height: 50px;
+        margin: 7px;
+    }
+    
+    .btn-middle i{
+        line-height: 50px;
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 400px){
@@ -630,6 +696,15 @@ i{
     .container-radionice{
         padding: 0 0 4rem 0;
         grid-gap: 50px;
+    }
+    .adresa h3{
+        font-size: 1.3rem;
+    } 
+    .adresa p{
+        font-size: .8rem;
+    }
+    .made-by-fonis{
+        font-size: .8rem;
     }
 }
 
@@ -665,7 +740,3 @@ i{
 .hidden{
     display: none;
 }
-
-
-
-
